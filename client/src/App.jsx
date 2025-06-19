@@ -12,7 +12,7 @@ function App() {
     setResponse(null);
 
     try {
-      const res = await fetch(`https://ping-form-backend.onrender.com?caller_id=${callerId}`);
+      const res = await fetch(`https://ping-form-backend.onrender.com/api/ping?caller_id=${callerId}`);
       const data = await res.json();
       setResponse(data);
     } catch (error) {
