@@ -60,7 +60,6 @@ function Post() {
           name="callerId"
           value={formData.callerId}
           onChange={handleChange}
-          // placeholder="e.g. 7194451111"
           required
         />
 
