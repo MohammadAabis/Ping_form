@@ -31,8 +31,9 @@ function Post() {
     setResponse(null);
 
     try {
-      console.log("Submitting form data:", formData);
-      const res = await fetch("http://localhost:5000/api/postform", {
+      
+      //  For local host ==> http://localhost:5000/api/postform"
+      const res = await fetch("https://ping-form-backend.onrender.com/api/postform", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

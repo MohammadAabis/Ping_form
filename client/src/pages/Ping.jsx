@@ -13,9 +13,15 @@ function Ping() {
     setResponse(null);
 
     try {
+      // For local host
+      // const res = await fetch(
+      //   `http://localhost:5000/api/pingform?callerId=${callerId}`
+      // );
+      // For production
       const res = await fetch(
-        `http://localhost:5000/api/pingform?callerId=${callerId}`
-      );
+        `https://ping-form-backend.onrender.com/api/pingform?callerId=${callerId}`
+      ); 
+
       const data = await res.json();
       setResponse(data);
       
